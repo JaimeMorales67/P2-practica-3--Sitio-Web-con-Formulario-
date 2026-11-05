@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro - Basketball Store</title>
+</head>
+<body bgcolor="#f4f4f4" text="#000000" link="#0000ee" vlink="#551a8b" style="margin: 0; padding: 0;">
+
+    <!-- HEADER / ENCABEZADO -->
+    <table width="100%" bgcolor="#1a1a1a" cellpadding="15" cellspacing="0">
+        <tr>
+            <td align="center">
+                <font color="#ffffff" size="6" face="Arial"><b>BASKETBALL STORE</b></font><br>
+                <font color="#ff6600" size="3" face="Arial"><i>La tienda oficial de los apasionados del baloncesto</i></font>
+            </td>
+        </tr>
+    </table>
+
+    <!-- BARRA DE NAVEGACIÓN -->
+    <table width="100%" bgcolor="#333333" cellpadding="12" cellspacing="0">
+        <tr>
+            <td align="center">
+                <font face="Arial" size="4">
+                    <a href="index.html"><font color="#ffffff"><b>INICIO</b></font></a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="tenis.html"><font color="#ffffff"><b>TENIS</b></font></a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="balones.html"><font color="#ffffff"><b>BALONES</b></font></a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="uniformes.html"><font color="#ffffff"><b>UNIFORMES NBA</b></font></a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="login.html"><font color="#ffffff"><b>INICIAR SESIÓN</b></font></a> &nbsp;&nbsp;|&nbsp;&nbsp;
+                    <a href="registro.html"><font color="#ff6600"><b>REGISTRARSE</b></font></a>
+                </font>
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <!-- FORMULARIO DE REGISTRO -->
+    <table align="center" width="500" border="1" cellspacing="0" cellpadding="20" bordercolor="#cccccc" bgcolor="#ffffff">
+        <tr>
+            <td align="center">
+                <font face="Arial" size="5" color="#1a1a1a"><h2>CREAR UNA CUENTA</h2></font>
+                <form action="procesar.php" method="POST">
+                    <input type="hidden" name="accion" value="registro">
+                    <table width="100%" cellpadding="6" border="0">
+                        <tr>
+                            <td>
+                                <font face="Arial" size="3"><b>Nombre Completo:</b></font><br>
+                                <input type="text" name="nombre" placeholder="Juan Pérez" required style="width: 95%; padding: 5px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <font face="Arial" size="3"><b>Correo Electrónico:</b></font><br>
+                                <input type="email" name="correo" placeholder="correo@ejemplo.com" required style="width: 95%; padding: 5px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <font face="Arial" size="3"><b>Contraseña:</b></font><br>
+                                <input type="password" name="contrasena" placeholder="Crea una contraseña" required style="width: 95%; padding: 5px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <font face="Arial" size="3"><b>Número de Celular:</b></font><br>
+                                <input type="tel" name="celular" placeholder="6561234567" required style="width: 95%; padding: 5px;">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <font face="Arial" size="3"><b>País:</b></font><br>
+                                <select name="pais" required style="width: 97%; padding: 5px;">
+                                    <option value="">-- Selecciona tu país --</option>
+                                    <option value="México">México</option>
+                                    <option value="Estados Unidos">Estados Unidos</option>
+                                    <option value="España">España</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Colombia">Colombia</option>
+                                    <option value="Chile">Chile</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center"><br>
+                                <input type="submit" value="REGISTRARSE" style="padding: 10px 30px; background-color: #ff6600; color: white; border: none; font-weight: bold; cursor: pointer;">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </td>
+        </tr>
+    </table>
+
+    <br><br><br>
+    <!-- FOOTER -->
+    <table width="100%" bgcolor="#1a1a1a" cellpadding="15" cellspacing="0" style="position: fixed; bottom: 0; left: 0;">
+        <tr>
+            <td align="center">
+                <font color="#ffffff" size="3" face="Arial">Jaime Omar Morales Reynoso 5-J</font>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
